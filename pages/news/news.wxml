@@ -1,0 +1,9 @@
+<!--pages/news/news.wxml-->
+<view class="container-content">
+  <block wx:for="{{newsList}}" wx:for-index="idx" wx:for-item="itemName">
+    <view class="news-item">
+      <view class="news-date">{{itemName.date}}</view>
+      <view class="news-content">{{itemName.content}}</view>
+    </view>
+  </block>
+</view>

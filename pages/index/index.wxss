@@ -1,4 +1,13 @@
 /**index.wxss**/
+.news{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+}
+.news-image{
+  width: 50rpx;
+  height: 50rpx;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -17,5 +26,5 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 50px;
 }

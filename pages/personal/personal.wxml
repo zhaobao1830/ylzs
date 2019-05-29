@@ -1,0 +1,57 @@
+<!--pages/personal/personal.wxml-->
+<view class="container-content">
+  <view class="personal-item">
+    <view class="item-con">
+      <text>姓名：</text>
+      <text class="item-con-val">{{personalInfo.name}}</text>
+    </view>
+    <view class="item-con">
+      <text>性别：</text>
+      <text class="item-con-val">{{personalInfo.sex}}</text>
+    </view>
+    <view class="item-con">
+      <text>婚姻：</text>
+      <text class="item-con-val">{{personalInfo.marriage}}</text>
+    </view>
+    <view class="item-con">
+      <text>年龄：</text>
+      <text class="item-con-val">{{personalInfo.age}}</text>
+    </view>
+    <view class="item-con">
+      <text>出生日期：</text>
+      <text class="item-con-val">{{personalInfo.dateBirth}}</text>
+    </view>
+    <view class="item-con">
+      <text>身份证：</text>
+      <text class="item-con-val">{{personalInfo.identityId}}</text>
+    </view>
+  </view>
+  <view class="personal-item">
+    <view class="item-con">
+      <text>现住址：</text>
+      <text class="item-con-val">{{personalInfo.presentAddress}}</text>
+    </view>
+    <view class="item-con">
+      <text>户口地址：</text>
+      <text class="item-con-val">{{personalInfo.residenceDddress}}</text>
+    </view>
+    <view class="item-con">
+      <text>联系电话：</text>
+      <text class="item-con-val">{{personalInfo.phone}}</text>
+    </view>
+  </view>
+  <view class="personal-item">
+    <view class="item-con">
+      <text>科室：</text>
+      <text class="item-con-val">{{personalInfo.department}}</text>
+    </view>
+    <view class="item-con">
+      <text>疾病：</text>
+      <text class="item-con-val">{{personalInfo.disease}}</text>
+    </view>
+    <view class="item-con">
+      <text>疾病描述：</text>
+      <text class="item-con-val">{{personalInfo.diseaseDescription}}</text>
+    </view>
+  </view>
+</view>

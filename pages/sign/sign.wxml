@@ -1,0 +1,9 @@
+<!--pages/sign/sign.wxml-->
+<view class="container-content">
+  <block wx:for="{{signList}}" wx:for-index="idx" wx:for-item="itemName">
+    <view class="signItem" bindtap="bindViewSignDetail">
+      <view class="dateY">{{itemName.dateY}}</view>
+      <view class="dateM">{{itemName.dateM}}</view>
+    </view>
+  </block>
+</view>

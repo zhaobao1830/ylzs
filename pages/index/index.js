@@ -4,15 +4,28 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    personalInfo: '个人信息',
+    signInfo: '体征信息',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function() {
+  // 跳转到消息页面
+  bindViewNews: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../news/news'
+    })
+  },
+  // 跳转到个人信息页面
+  bindViewPersonal: function() {
+    wx.navigateTo({
+      url: '../personal/personal'
+    })
+  },
+  // 跳转到体征消息页面
+  bindViewSign: function() {
+    wx.navigateTo({
+      url: '../sign/sign'
     })
   },
   onLoad: function () {

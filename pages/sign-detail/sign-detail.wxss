@@ -1,0 +1,25 @@
+/* pages/sign-detail/sign-detail.wxss */
+.container-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.sign-detail-item{
+  width: 100%;
+  padding: 20rpx 0;
+  border-top: 1px solid #ededed;
+}
+
+.item-con{
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color:#666;
+}
+.item-con-val{
+  margin-left: 10rpx;
+}
+

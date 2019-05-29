@@ -1,11 +1,37 @@
 //app.js
 App({
+  data: {
+    signList: [
+      {
+        dateY: '2019-03-05',
+        dateM: '12:22:22',
+        temperature: '36', // 体温
+        bloodSugar: '6.7', // 血糖
+        bloodPressure: '120/80', // 血压
+        urineVolume: '123', // 尿量
+        intakeVolume: '122', // 入液量
+        liquidOutput: '122', // 出液量
+        stoolFrequency: '1' // 大便次数
+      },
+      {
+        dateY: '2019-03-06',
+        dateM: '12:22:22',
+        temperature: '36', // 体温
+        bloodSugar: '6.7', // 血糖
+        bloodPressure: '120/80', // 血压
+        urineVolume: '123', // 尿量
+        intakeVolume: '122', // 入液量
+        liquidOutput: '122', // 出液量
+        stoolFrequency: '1' // 大便次数
+      }
+    ]
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    wx.setStorageSync('signList', this.data.signList)
     // 登录
     wx.login({
       success: res => {

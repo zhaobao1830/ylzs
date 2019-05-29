@@ -1,0 +1,10 @@
+<!--pages/sign-detail/sign-detail.wxml-->
+<view class="container-content">
+  <view>{{sign.dateY}}</view>
+  <view class="sign-detail-item">
+    <view class="item-con">
+      <text>姓名：</text>
+      <text class="item-con-val">{{sign.dateM}}</text>
+    </view>
+  </view>
+</view>

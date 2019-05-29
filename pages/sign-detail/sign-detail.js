@@ -1,4 +1,4 @@
-// pages/sign/sign.js
+// pages/sign-detail/sign-detail.js
 Page({
 
   /**
@@ -7,19 +7,16 @@ Page({
   data: {
     signList: []
   },
-  bindViewSignDetail: function (event) {
-    var index = event.currentTarget.dataset.index;
-    wx.navigateTo({
-      url: '../sign-detail/sign-detail?index=' + index
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var index = options.index;
     var signLists = wx.getStorageSync('signList')
     this.setData({
-      signList: signLists
+      signList: signLists,
+      sign: signLists[index]
     })
   },
 
@@ -27,7 +24,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**

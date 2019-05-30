@@ -1,1 +1,68 @@
 /* pages/sign-input/sign-input.wxss */
+.container-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.form{
+  width: 100%;
+}
+.sign-detail-item{
+  width: 100%;
+  padding: 20rpx 0;
+}
+.dateY{
+  width: 400rpx;
+  height: 1.4rem;
+  border: 1px solid #ddd;
+  padding: 10rpx;
+  font-size: 32rpx;
+  color:#666;
+  /*margin: 0 auto;*/
+}
+.dateM picker{
+  width: 400rpx;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  border: 1px solid #ddd;
+  padding: 10rpx;
+}
+.item-con{
+  align-items: center;
+  margin-top: 30rpx;
+  width: 100%;
+  font-size: 28rpx;
+  color:#666;
+  display: flex;
+}
+.item-con text{
+  width: 150rpx;
+}
+.item-con input{
+  min-width: 400rpx;
+  border: 1px solid #ddd;
+  padding: 10rpx;
+}
+
+.submit,.reset{
+  margin-top: 100rpx;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: bold;
+  float: left;
+  color: #666;
+}
+.submit{
+  margin-left: 50px;
+}
+.reset{
+  margin-left: 75px;
+}

@@ -1,2 +1,54 @@
 <!--pages/sign-input/sign-input.wxml-->
-<text>pages/sign-input/sign-input.wxml</text>
+<view class="container-content">
+  <form class="form" bindsubmit="formSubmit" bindreset="formReset">
+    <view class="sign-detail-item">
+      <view class="item-con">
+        <text>日期：</text>
+        <view class="dateY">
+          {{dateY}}
+        </view>
+      </view>
+
+      <view class="dateM item-con">
+        <text>时间：</text>
+        <picker mode="multiSelector" value="{{startTime}}" bindchange="startTimeChange" bindcolumnchange="startTimeColumn" range="{{startTimeArray}}">
+          <view class="picker">
+            {{startTimeArray[0][startTime[0]]}}:{{startTimeArray[1][startTime[1]]}}:{{startTimeArray[2][startTime[2]]}}
+          </view>
+        </picker>
+      </view>
+      <view class="item-con">
+        <text>体温：</text>
+        <input type="number" name="temperature" value="{{temperature}}"/>
+      </view>
+      <view class="item-con">
+        <text>血糖：</text>
+        <input type="digit" name="bloodSugar" value="{{bloodSugar}}"/>
+      </view>
+      <view class="item-con">
+        <text>血压：</text>
+        <input name="bloodPressure" value="{{bloodPressure}}"/>
+      </view>
+      <view class="item-con">
+        <text>尿量：</text>
+        <input type="number" name="urineVolume" value="{{urineVolume}}"/>
+      </view>
+      <view class="item-con">
+        <text>入液量：</text>
+        <input type="number" name="intakeVolume" value="{{intakeVolume}}"/>
+      </view>
+      <view class="item-con">
+        <text>出液量：</text>
+        <input type="number" name="liquidOutput" value="{{liquidOutput}}"/>
+      </view>
+      <view class="item-con">
+        <text>大便次数：</text>
+        <input type="number" name="stoolFrequency" value="{{stoolFrequency}}"/>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button class="submit" formType="submit">保存</button>
+      <button class="reset" formType="reset">取消</button>
+    </view>
+  </form>
+</view>

@@ -16,5 +16,14 @@
   justify-content: space-between;
   margin-top: 20rpx;
 }
-
+.sign-input{
+  margin-top: 300rpx;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: bold;
+}
 

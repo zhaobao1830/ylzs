@@ -42,7 +42,7 @@
 				{
 					"id": -1,
 					"name": "sign",
-					"pathName": "pages/sign/sign",
+					"pathName": "pages/sign-input/sign-input",
 					"query": "",
 					"scene": null
 				}

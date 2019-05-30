@@ -13,13 +13,17 @@
   padding: 20rpx 0;
   border-top: 1px solid #ededed;
 }
-
-.item-con{
-  margin-left: 30rpx;
-  font-size: 28rpx;
+.dateY{
+  font-size: 32rpx;
   color:#666;
 }
-.item-con-val{
-  margin-left: 10rpx;
+.item-con{
+  margin-top: 20rpx;
+  width: 100%;
+  font-size: 28rpx;
+  color:#666;
+  display: flex;
+  justify-content: space-between;
 }
+
 

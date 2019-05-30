@@ -1,10 +1,38 @@
 <!--pages/sign-detail/sign-detail.wxml-->
 <view class="container-content">
-  <view>{{sign.dateY}}</view>
+  <view class="dateY">{{sign.dateY}}</view>
   <view class="sign-detail-item">
     <view class="item-con">
-      <text>姓名：</text>
+      <text>时间：</text>
       <text class="item-con-val">{{sign.dateM}}</text>
+    </view>
+    <view class="item-con">
+      <text>体温：</text>
+      <text class="item-con-val">{{sign.temperature}}</text>
+    </view>
+    <view class="item-con">
+      <text>血糖：</text>
+      <text class="item-con-val">{{sign.bloodSugar}}</text>
+    </view>
+    <view class="item-con">
+      <text>血压：</text>
+      <text class="item-con-val">{{sign.bloodPressure}}</text>
+    </view>
+    <view class="item-con">
+      <text>尿量：</text>
+      <text class="item-con-val">{{sign.urineVolume}}</text>
+    </view>
+    <view class="item-con">
+      <text>入液量：</text>
+      <text class="item-con-val">{{sign.intakeVolume}}</text>
+    </view>
+    <view class="item-con">
+      <text>出液量：</text>
+      <text class="item-con-val">{{sign.liquidOutput}}</text>
+    </view>
+    <view class="item-con">
+      <text>大便次数：</text>
+      <text class="item-con-val">{{sign.stoolFrequency}}</text>
     </view>
   </view>
 </view>

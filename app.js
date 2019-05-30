@@ -15,9 +15,9 @@ App({
       },
       {
         dateY: '2019-03-06',
-        dateM: '12:22:22',
-        temperature: '36', // 体温
-        bloodSugar: '6.7', // 血糖
+        dateM: '12:22:23',
+        temperature: '37', // 体温
+        bloodSugar: '6.5', // 血糖
         bloodPressure: '120/80', // 血压
         urineVolume: '123', // 尿量
         intakeVolume: '122', // 入液量

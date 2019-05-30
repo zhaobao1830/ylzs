@@ -40,7 +40,8 @@
   display: flex;
 }
 .item-con text{
-  width: 150rpx;
+  width: 170rpx;
+  margin-left: 60rpx;
 }
 .item-con input{
   min-width: 400rpx;

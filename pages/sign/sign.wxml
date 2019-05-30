@@ -6,5 +6,5 @@
       <view class="dateM">{{itemName.dateM}}</view>
     </view>
   </block>
-  <view class="sign-input" bindtap="bindViewSignInput">录入</view>
+  <button class="sign-input" bindtap="bindViewSignInput">录入</button>
 </view>

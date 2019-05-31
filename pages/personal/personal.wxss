@@ -16,7 +16,7 @@
 
 .item-con{
   margin-left: 30rpx;
-  font-size: 28rpx;
+  font-size: 34rpx;
   color:#666;
 }
 .item-con-val{

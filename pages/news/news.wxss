@@ -13,15 +13,15 @@
   margin-top: 20rpx;
 }
 .news-date{
-  font-size: 28rpx;
+  font-size: 34rpx;
   text-align: right;
-  color:#666;
+  color: #666;
   padding-right: 20rpx;
 }
 .news-content{
   padding: 0 20rpx;
-  color:#666;
-  font-size:28rpx;
+  color: #666;
+  font-size: 34rpx;
   margin-top: 10rpx;
   margin-bottom:20rpx;
 }

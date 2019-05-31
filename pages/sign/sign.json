@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "l-button": "/miniprogram_npm/lin-ui/button/index"
+  },
   "navigationBarTitleText": "体征信息"
 }

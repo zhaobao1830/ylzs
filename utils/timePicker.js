@@ -1,21 +1,22 @@
-function withData(param) {
-  return param < 10 ? '0' + param : '' + param;
+const formatNumber = n => {
+  n = n.toString()
+  return n[1] ? n : '0' + n
 }
 function getLoopArray(start, end) {
   var start = start || 0;
   var end = end || 1;
   var array = [];
   for (var i = start; i <= end; i++) {
-    array.push(withData(i));
+    array.push(formatNumber(i));
   }
   return array;
 }
 function getNewTimeArry() {
   // 当前时间的处理
   var newDate = new Date();
-  var hour = withData(newDate.getHours()),
-    minu = withData(newDate.getMinutes()),
-    seco = withData(newDate.getSeconds());
+  var hour = formatNumber(newDate.getHours()),
+    minu = formatNumber(newDate.getMinutes()),
+    seco = formatNumber(newDate.getSeconds());
 
   return [hour, minu, seco];
 }
@@ -37,20 +38,6 @@ function timePicker(date) {
     timeArray: timeArray,
     time:time,
   }
-}
-
-function timeResult(time){
-  var timeArray = time;
-  if (timeArray[0] < 10){
-    timeArray[0] = '0' +timeArray[0];
-  }
-  if (timeArray[1] < 10) {
-    timeArray[1] = '0' + timeArray[1];
-  }
-  if (timeArray[2] < 10) {
-    timeArray[2] = '0' + timeArray[2];
-  }
-  return timeArray[0] + ":" + timeArray[1] + ":" + timeArray[2];
 }
 module.exports = {
   timePicker: timePicker

@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "l-button": "/miniprogram_npm/lin-ui/button/index",
+    "l-toast": "/miniprogram_npm/lin-ui/toast/index"
+  },
   "navigationBarTitleText": "体征录入"
 }

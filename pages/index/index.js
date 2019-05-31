@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    newsLength: 3,
     personalInfo: '个人信息',
     signInfo: '体征信息',
     userInfo: {},
@@ -12,19 +13,19 @@ Page({
   },
   // 跳转到消息页面
   bindViewNews: function() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../news/news'
     })
   },
   // 跳转到个人信息页面
   bindViewPersonal: function() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../personal/personal'
     })
   },
   // 跳转到体征消息页面
   bindViewSign: function() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../sign/sign'
     })
   },

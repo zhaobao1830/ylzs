@@ -8,9 +8,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    dateY: util.formatDay(nowDate),
+    dateY: util.formatDay(nowDate), // 日期
     startTime: util.formatTimeN(nowDate),
-    dateM: '',
+    dateM: '', // 时间
     temperature: '',
     bloodSugar: '',
     bloodPressure: '',
@@ -24,20 +24,16 @@ Page({
     submitSign.dateY = this.data.dateY
     var startTime = this.data.startTime
     for (var i = 0; i < startTime.length; i++) {
-      if (startTime[i] < 10) {
-        startTime[i] = '0'+startTime[i]
-      }
+      startTime[i] = util.formatNumber(startTime[i])
+      // if (startTime[i] < 10) {
+      //   startTime[i] = '0'+startTime[i]
+      // }
     }
-    console.log(startTime)
     submitSign.dateM = startTime.join(":")
     var storageSignList = wx.getStorageSync('signList');
     storageSignList.push(submitSign)
     wx.setStorageSync('signList', storageSignList)
-    wx.showToast({
-      title: '添加成功',
-      icon: 'success',
-      duration: 2000
-    })
+    this.show()
     this.formReset()
   },
   formReset: function () {
@@ -56,30 +52,15 @@ Page({
       stoolFrequency: ''
     })
   },
-  bindDateYChange: function(e) {
-    this.setData({
-      dateY: e.detail.value
-    })
-  },
-  bindDateMChange: function (e) {
-    this.setData({
-      startTime: e.detail.value
-    })
-  },
   startTimeColumn(e) {
-    console.log('我是startTimeColumn')
     var startTimeArr = this.data.startTime;
-    console.log(startTimeArr)
-    console.log(e.detail.value)
     startTimeArr[e.detail.column] = e.detail.value
-    console.log(startTimeArr)
     this.setData({
       startTime: startTimeArr
     });
 
   },
   startTimeChange: function (e) {
-    console.log('我是startTimeChange')
     var startTimeArr = this.data.startTime;
     startTimeArr[e.detail.column] = e.detail.value;
     this.setData({
@@ -87,10 +68,18 @@ Page({
     });
 
   },
+  show () {
+    wx.lin.showToast({
+      title: '添加成功~',
+      icon: 'success',
+      iconStyle: 'color:#7ec699; size: 60',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(util.formatTimeN(nowDate))
     // 获取时分秒数组，在页面中显示
     var obj = timePicker.timePicker(util.formatTimeN(nowDate));
     this.setData({

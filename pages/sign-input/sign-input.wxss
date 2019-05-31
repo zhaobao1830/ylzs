@@ -35,7 +35,7 @@
   align-items: center;
   margin-top: 30rpx;
   width: 100%;
-  font-size: 28rpx;
+  font-size: 34rpx;
   color:#666;
   display: flex;
 }
@@ -48,22 +48,20 @@
   border: 1px solid #ddd;
   padding: 10rpx;
 }
-
+.btn-area{
+  display: flex;
+  justify-content: space-around;
+}
 .submit,.reset{
   margin-top: 100rpx;
-  width: 200rpx;
-  height: 80rpx;
-  line-height: 80rpx;
+  width: 250rpx;
+  height: 120rpx !important;
+  line-height: 120rpx !important;
   border: 1px solid #ddd;
   text-align: center;
-  font-size: 28rpx;
+  font-size: 38rpx;
   font-weight: bold;
   float: left;
-  color: #666;
-}
-.submit{
-  margin-left: 50px;
-}
-.reset{
-  margin-left: 75px;
+  color: #fff;
+  background-color: #3963bc;
 }

@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "l-button": "/miniprogram_npm/lin-ui/button/index",
+    "l-badge": "/miniprogram_npm/lin-ui/badge/index"
+  },
   "navigationBarTitleText": "医疗咨询"
 }

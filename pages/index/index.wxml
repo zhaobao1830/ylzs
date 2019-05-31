@@ -1,12 +1,14 @@
 <!--index.wxml-->
 <view class="container">
+  <l-badge count="{{newsLength}}" class="news" bindtap="bindViewNews">
+    <image class="news-image" src="/images/tab/news_hl.png"/>
+  </l-badge>
   <view class="news" bindtap="bindViewNews">
-    <image class="news-image" src="./images/news.png"/>
   </view>
-  <button class="usermotto" bindtap="bindViewPersonal">
+  <l-button class="usermotto" width="500" height="120" bindtap="bindViewPersonal">
     <text class="user-motto">{{personalInfo}}</text>
-  </button>
-  <button class="usermotto" bindtap="bindViewSign">
+  </l-button>
+  <l-button class="usermotto" width="500" height="120" bindtap="bindViewSign">
     <text class="user-motto">{{signInfo}}</text>
-  </button>
+  </l-button>
 </view>

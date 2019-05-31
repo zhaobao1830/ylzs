@@ -25,15 +25,12 @@ Page({
     var startTime = this.data.startTime
     for (var i = 0; i < startTime.length; i++) {
       startTime[i] = util.formatNumber(startTime[i])
-      // if (startTime[i] < 10) {
-      //   startTime[i] = '0'+startTime[i]
-      // }
     }
     submitSign.dateM = startTime.join(":")
     var storageSignList = wx.getStorageSync('signList');
     storageSignList.push(submitSign)
     wx.setStorageSync('signList', storageSignList)
-    this.show()
+    this.toastShow()
     this.formReset()
   },
   formReset: function () {
@@ -52,14 +49,15 @@ Page({
       stoolFrequency: ''
     })
   },
+  // 选择时间的时候触发
   startTimeColumn(e) {
     var startTimeArr = this.data.startTime;
     startTimeArr[e.detail.column] = e.detail.value
     this.setData({
       startTime: startTimeArr
     });
-
   },
+  // 确定的时候触发
   startTimeChange: function (e) {
     var startTimeArr = this.data.startTime;
     startTimeArr[e.detail.column] = e.detail.value;
@@ -68,7 +66,8 @@ Page({
     });
 
   },
-  show () {
+  // 提示信息
+  toastShow () {
     wx.lin.showToast({
       title: '添加成功~',
       icon: 'success',
@@ -86,54 +85,5 @@ Page({
       startTimeArray: obj.timeArray,
       startTime: obj.time
     });
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   }
 })
